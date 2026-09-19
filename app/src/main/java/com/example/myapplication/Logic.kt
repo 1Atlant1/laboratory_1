@@ -6,4 +6,5 @@ class TextProccesor {
         return input.split(' ', '.', ',', ';', ':', '-', '!', '?', '"')
             .map { it.trim().uppercase() }.filter { it.isNotEmpty() }.toSet().sorted()
     }
+
 }

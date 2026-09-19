@@ -52,6 +52,7 @@ class MainActivity : ComponentActivity() {
 
                         }
                     ) {
+
                         Text("Нажми")
                     }
                     OutlinedTextField(
