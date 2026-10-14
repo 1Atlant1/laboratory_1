@@ -1,7 +1,7 @@
 package com.example.myapplication
 
 
-class TextProccesor {
+object TextProccesor {
     fun processText(input: String): List<String> {
         return input.split(' ', '.', ',', ';', ':', '-', '!', '?', '"')
             .map { it.trim().uppercase() }.filter { it.isNotEmpty() }.toSet().sorted()
